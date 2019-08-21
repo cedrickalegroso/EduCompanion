@@ -13,11 +13,34 @@
 
 <div class="container">
 
-    
+        <div class="container text-left">
+
+
+                <div class="problem">
+           
+                   <p> <strong> Using C, Create a simple program that ouputs Hello, World </strong> </p>
+                     
+                <div class="expected">
+                       <pre> expected output: </pre>
+           
+                       <pre> Hello, World! </pre>
+                </div>
+                  
+           
+           
+           
+                </div>
 
     <div class="coding-quiz">
             <div id="editor">  </div> 
     </div>
+
+    <br />
+
+    <form action="">
+
+        <button class="btn btn-md btn-success form-control">Submit Solution</button>
+    </form>
        
 
 

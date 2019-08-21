@@ -42,6 +42,11 @@ Route::get('/quizgames', function () {
 })->name('quizgamespage');
 
 
+Route::get('/myprofile', function () {
+    return view('user.profile');
+})->name('myprofile');
+
+
 /* opening games page */
 
 /*
