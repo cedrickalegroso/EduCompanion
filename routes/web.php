@@ -32,14 +32,27 @@ Route::get('/userhome', 'HomeController@index')->name('userhome');
 /* user games page */
 
 
+/* forum */
 
-Route::get('/forum', function () {
-    return view('user.forum');
-})->name('forumpage');
+
+
+
+Route::get('/forum', 'ForumController@index')->name('forumpage');
+
+Route::get('/addforum', 'ForumController@addforum')->name('addforum');
+
+/* ------ */
+
+
+
 
 Route::get('/quizgames', function () {
     return view('user.quizgame');
 })->name('quizgamespage');
+
+Route::get('/learnpage', function () {
+    return view('user.learn');
+})->name('learnpage');
 
 
 Route::get('/myprofile', function () {
