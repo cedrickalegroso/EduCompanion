@@ -19,7 +19,9 @@
 
     <script src="https://kit.fontawesome.com/15533ac0c2.js"></script>
 
-    
+    <script src="   https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+ 
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
