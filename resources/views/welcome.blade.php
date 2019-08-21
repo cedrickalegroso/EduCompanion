@@ -81,11 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Educompanion
+                   EduCompanion
                 </div>
 
                 <div class="links">
-                  <p> To leverage education in the philippines </p>
+                  <p> To disseminate data efficiently without any inconvenience with velocity </p>
                 </div>
             </div>
         </div>
