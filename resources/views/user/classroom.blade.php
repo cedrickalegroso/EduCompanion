@@ -7,16 +7,35 @@
 <h3 class="text-info"> Classroom </h3>
 
 <hr>
-<div class="col-md-4">
-            <div class="card card-quiz p-3">
-               <h3> Add Class </h3>
 
-               <a data-toggle="modal" href="#exampleModalLong" class="btn btn-md btn-info">Add</a>
-            </div>
+<div class="container">
+
+    <div class="row">
+            <div class="col-md-4">
+                    <div class="card card-quiz p-3">
+                       <h3> Add Class </h3>
+        
+                       <a data-toggle="modal" href="#exampleModalLong" class="btn btn-md btn-info">Add</a>
+                    </div>
+    
+        </div>
 
 
-<br />
+        @foreach ($enrolled as $enrolledclass)
+
+        <div class="col-md-4">
+                <div class="card card-quiz p-3">
+                   <h3> {{ $enrolledclass->enrolled_name }} </h3>
+    
+                <a href="openclass/{{$enrolledclass->enrolled_at}}" class="btn btn-md btn-info">open Class</a>
+                </div>
+
+            
+        @endforeach
+
+    </div>
 </div>
+
 @endsection
 
 
