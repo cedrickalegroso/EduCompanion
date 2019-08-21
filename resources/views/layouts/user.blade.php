@@ -82,7 +82,7 @@
             <li> <a href="{{ route('forumpage')}} ">Forum</a></li>
             <li> <a href="{{ route('classroompage') }}">Classroom</a></li>
             <li> <a href="{{ route('quizgamespage')}}">Quiz Games</a></li>
-                <li> <a href="">Learns</a></li>
+                <li> <a href="">Learn</a></li>
             <li> <a href="{{ route('myprofile') }}">Profile</a></li>
             </ul>
         </div>
