@@ -31,9 +31,7 @@ Route::get('/userhome', 'HomeController@index')->name('userhome');
 
 /* user games page */
 
-Route::get('/classroom', function () {
-    return view('user.classroom');
-})->name('classroompage');
+
 
 Route::get('/forum', function () {
     return view('user.forum');
@@ -58,3 +56,23 @@ Route::get('/mathquizgame', 'QuizGameController@mathquizgame')->name('mathquizga
 
 
 Route::get('/verifymath/{answer}/{points}', 'QuizGameController@verifymath')->name('verifymath');
+
+
+/* user classes  */
+
+
+
+
+Route::get('/classroompage', 'ClassroomController@classroompage')->name('classroompage');
+
+Route::get('/userenrollclass', 'ClassroomController@userenrollclass')->name('userenrollclass');
+
+/* -----  */
+
+/* teacher classes  */
+
+Route::get('/teacherclassroompage', 'ClassroomController@teacherclassroompage')->name('teacherclassroompage');
+
+
+Route::get('/teachercreateclass', 'ClassroomController@teachercreateclass')->name('teachercreateclass');
+/* -----  */
