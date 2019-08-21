@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 
 
+Route::get('/loginuser', function () {
+    return view('user.login ');
+});
+
+
+
 Route::get('/testlayout', function () {
     return view('layouts.user');
 });
@@ -25,7 +31,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('/userhome', 'HomeController@index')->name('userhome');
+Route::post('/userlogin', 'Auth1Controller@userlogin')->name('userlogin');
+
+Route::get('/', 'HomeController@index')->name('userhome');
 
 
 

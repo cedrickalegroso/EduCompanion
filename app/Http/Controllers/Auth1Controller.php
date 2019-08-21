@@ -2,79 +2,43 @@
 
 namespace App\Http\Controllers;
 
-
 use Auth;
 use App\User;
 use Illuminate\Http\Request;
 
-class QuizGameController extends Controller
+class Auth1Controller extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function verifymath(Request $request, $answer, $points)
+    public function userlogin(Request $request)
     {
         
-        $userans = $request['answer'];
-        $user = Auth::user()->id;
-
-        if ( $userans ===  $answer ) {
-              
-         
-
-           $prevpoint = Auth::user()->math_quiz_pts;
-           $pointsnow = $prevpoint + $points;
-           $userupdate = user::find($user);
-           $userupdate->math_quiz_pts = $pointsnow;
-           $userupdate->save();
-
-
-           return redirect()->back();
-
-
+         // user login
+        // Validation 
+        $this->validate($request, [
+            'username' => 'required',        
+            'password' => 'required',
+        ]);
+        $username = $request['username'];
+        $password = $request['password'];
+        if (Auth::attempt(['username' => $username, 'password' => $password]) ) {
+            return redirect()->route('userhome');
         } else {
-
-           
-
-            $prevpoint = Auth::user()->math_quiz_pts;
-            $pointsnow = $prevpoint - $points;
-            $userupdate = user::find($user);
-            $userupdate->math_quiz_pts = $pointsnow;
-            $userupdate->save();
-
-            return redirect()->back();
+           echo "Login Error";
         }
     }
 
-
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function mathquizgame()
+    public function create()
     {
-        
-        $leaderboard = user::where('math_quiz_pts', '>', 0)
-        ->take('3')
-        ->orderBy ('math_quiz_pts', 'desc')
-        ->get();
-
-        return view('user.quizgames.mathquizgame', ['leaderboard' => $leaderboard]);
-    }
-
-
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function codingquizgame()
-    {
-       return view('user.quizgames.codingquizgame');
+        //
     }
 
     /**

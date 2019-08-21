@@ -16,8 +16,8 @@
     $rand1 = rand(1,999);
     $rand2 = rand(1,999);
 
-    $randomarithmetic = array('+', '-', '*', '/');
-    $randomize = $randomarithmetic[rand(0,3)];
+    $randomarithmetic = array('+', '-', '*');
+    $randomize = $randomarithmetic[rand(0,2)];
 
     switch ($randomize) {
     case "+":
@@ -31,10 +31,6 @@
     case "*":
         $answer = $rand1 * $rand1;
         $points = 3;
-        break;
-    case "/":
-        $answer = $rand1 / $rand1;
-        $points = 4;
         break;
 }
 
