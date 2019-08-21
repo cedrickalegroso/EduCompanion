@@ -30,5 +30,38 @@
         
     </div>
 </div>
+
+
+<div class="container">
+       
+    <div class="row">
+
+        <div class="col-md-6">
+       
+
+        <div class="card card-quiz  text-info mt-2">
+                <br />
+                <h3> Your Task </h3>
+          
+                <p> 3 tasks </p>
+
+        </div>
+        </div>
+
+        <div class="col-md-6">
+
+                <div class="card card-quiz  text-info mt-2">
+                    <br />
+                        <h3>  Quiz Points </h3>
+
+                        <p> 50 Points </p>
+        
+                </div>
+              
+            </div>
+
+           
+    </div>
+</div>
 @endsection
 
