@@ -32,7 +32,17 @@
                 </div>
 
     <div class="coding-quiz">
-            <div id="editor">  </div> 
+            <div id="editor"> #include < stdio.h>
+ #include < conio.h> 
+
+
+        void main() {
+
+                //write your work here
+
+                return 0;
+        };
+</div> 
     </div>
 
     <br />

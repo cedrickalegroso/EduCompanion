@@ -13,10 +13,10 @@
 @php
     
 
-    $rand1 = rand(1,999);
-    $rand2 = rand(1,999);
+    $rand1 = rand(1,99);
+    $rand2 = rand(1,99);
 
-    $randomarithmetic = array('+', '-', '*');
+    $randomarithmetic = array('+', '-');
     $randomize = $randomarithmetic[rand(0,2)];
 
     switch ($randomize) {
@@ -28,10 +28,7 @@
         $answer = $rand1 - $rand1;
         $points = 2;
         break;
-    case "*":
-        $answer = $rand1 * $rand1;
-        $points = 3;
-        break;
+   
 }
 
 

@@ -17,35 +17,35 @@ class QuizGameController extends Controller
     public function verifymath(Request $request, $answer, $points)
     {
         
-        $userans = $request['answer'];
-        $user = Auth::user()->id;
-
-        if ( $userans ===  $answer ) {
-              
-         
-
-           $prevpoint = Auth::user()->math_quiz_pts;
-           $pointsnow = $prevpoint + $points;
-           $userupdate = user::find($user);
-           $userupdate->math_quiz_pts = $pointsnow;
-           $userupdate->save();
-
-
-           return redirect()->back();
-
-
+          // user register
+        // Validation 
+        $this->validate($request, [
+            'useranswer' => 'required'
+        ]);
+        
+        $useranswer = $request['useranswer'];
+        if ( $answer == $useranswer ) {
+            
+    $user = User::find(Auth::user()->id);
+    
+    $prevpoints = $user->math_quiz_pts;
+    $pointslatest = $prevpoints + $points;
+    $user->math_quiz_pts = $pointslatest;
+    $user->save();
+    return redirect()->back();   
+     
         } else {
-
            
-
-            $prevpoint = Auth::user()->math_quiz_pts;
-            $pointsnow = $prevpoint - $points;
-            $userupdate = user::find($user);
-            $userupdate->math_quiz_pts = $pointsnow;
-            $userupdate->save();
-
-            return redirect()->back();
+            $user =  User::find(Auth::user()->id);
+    
+    
+            $prevpoints = $user->math_quiz_pts;
+            $pointslatest = $prevpoints - $points;
+            $user->math_quiz_pts = $pointslatest;
+            $user->save(); 
+            return redirect()->back();   
         }
+
     }
 
 
