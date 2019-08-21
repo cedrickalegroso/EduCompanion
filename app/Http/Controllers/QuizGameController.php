@@ -72,9 +72,9 @@ class QuizGameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function codingquizgame()
     {
-        //
+       return view('user.quizgames.codingquizgame');
     }
 
     /**

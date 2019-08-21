@@ -32,7 +32,7 @@
 
              
 
-               <a class="btn btn-md btn-info text-light">Play!</a>
+               <a class="btn btn-md btn-info text-light"  href="{{ route('codingquizgame') }} ">Play!</a>
             </div>
             </div>
 

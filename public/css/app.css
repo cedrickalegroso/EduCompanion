@@ -10677,3 +10677,9 @@ a.text-dark:focus {
   grid-area: mainuserwrappersec3;
 }
 
+#editor {
+  margin-top: 10px;
+  width: 750px;
+  height: 250px;
+}
+

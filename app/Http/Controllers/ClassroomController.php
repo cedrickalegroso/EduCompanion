@@ -128,7 +128,7 @@ class ClassroomController extends Controller
         $class = classroom::where('id', $class)->first();
 
 
-        return view('user.openclass', ['class' => $class ]);
+        return view('user.openclass');
 
     }
 

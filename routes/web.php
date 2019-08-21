@@ -52,6 +52,8 @@ Route::get('/mathquizgame', function () {
 
 Route::get('/mathquizgame', 'QuizGameController@mathquizgame')->name('mathquizgame');
 
+Route::get('/codingquizgame', 'QuizGameController@codingquizgame')->name('codingquizgame');
+
 /* verifying games */
 
 
