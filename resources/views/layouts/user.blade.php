@@ -91,6 +91,7 @@
         </div>
 
         <div id="mainuserwrappersec3">
+            <br />
                 @yield('content-sideline')
         </div>
 

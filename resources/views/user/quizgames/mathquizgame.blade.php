@@ -67,3 +67,15 @@
   
 </div>
 @endsection
+
+
+@section('content-sideline')
+    <h3> Math Leaderboards </h3>
+
+    
+    @foreach ($leaderboard as $userleader)
+   
+      {{ $userleader->username }} | {{ $userleader->math_quiz_pts}}
+      
+    @endforeach
+@endsection
