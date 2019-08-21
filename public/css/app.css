@@ -10644,6 +10644,11 @@ a.text-dark:focus {
   }
 }
 
+.learnlogo {
+  font-size: 5rem;
+  color: #227dc7;
+}
+
 #mainuserwrapper {
   background-color: #ececec;
   height: 100vh;

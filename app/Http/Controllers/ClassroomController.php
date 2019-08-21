@@ -130,10 +130,15 @@ class ClassroomController extends Controller
         $class = classroom::where('id', $enrolled)
         ->take('1')
         ->get();
+
+
+        $task = task::where('task_to', $enrolled)
+        ->take('10')
+        ->get();
         
       
        
-        return view('user.openclass', ['class' => $class ]);
+        return view('user.openclass', ['class' => $class, 'task' => $task ]);
 
     }
 
