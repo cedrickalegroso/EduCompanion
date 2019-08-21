@@ -25,11 +25,23 @@
         </div>
 
         <div class="col-md-4">
-            
+            <div class="card">
+               <h3> Coding Quiz </h3>
+
+               <hr>
+
+               <button class="btn btn-md btn-info">Play!</button>
+            </div>
             </div>
 
             <div class="col-md-4">
-            
+            <div class="card">
+               <h3> Science Quiz </h3>
+
+               <hr>
+
+               <button class="btn btn-md btn-info">Play!</button>
+            </div>
                 </div>
     </div>
 </div>
