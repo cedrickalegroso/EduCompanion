@@ -1,4 +1,4 @@
-# hackapp
+# hackapp | HACK ILOILO 
 
 <h1> This app is built on Laravel Framework </h1>
 
@@ -12,13 +12,13 @@
 <p> download: Laravel, Composer </p>
 
 <ul> 
-    <li> 1.Clone git  </li>    
-     <li> 2.Composer install  </li>     
-      <li> 3.after composer install try php artisan serve if the page loads fine proceed to step 5  </li>
-       <li> 4.if you got 500 error. type php artisan key:generate on cli </li>
-     <li> 5.php artisan migrate Note you should be running a Xampp Application with a Laravel Database </li>
-     <li>6.run php artisan migrate to create the databases for this app </li>
-     <li> 7.finally run again with php artisan serve ;)</li>
+    <li> 1. Clone git  </li>    
+     <li> 2. Composer install  </li>     
+      <li> 3. After composer install try php artisan serve if the page loads fine proceed to step 5  </li>
+       <li> 4. If you got 500 error. type php artisan key:generate on cli </li>
+     <li> 5. Php artisan migrate Note you should be running a Xampp Application with a Laravel Database </li>
+     <li>6. Run php artisan migrate to create the databases for this app </li>
+     <li> 7. Finally run again with php artisan serve ;)</li>
 </ul>
 
 
