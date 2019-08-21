@@ -32,10 +32,10 @@
                 <a href="/openclass/{{$enrolledclass->enrolled_at}}" class="btn btn-md btn-info">open Class</a>
                 </div>
 
-            
+              </div>
         @endforeach
 
-    </div>
+   
 </div>
 
 @endsection
