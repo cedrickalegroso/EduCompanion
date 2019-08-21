@@ -16,6 +16,10 @@ Route::get('/', function () {
 });
 
 
+Route::get('/homepage', function () {
+    return view('user.home');
+})->name('homepage');;
+
 Route::get('/loginuser', function () {
     return view('user.login ');
 });
