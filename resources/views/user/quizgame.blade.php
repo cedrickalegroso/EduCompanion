@@ -10,37 +10,39 @@
 <br />
 
 
-<div class="container">
+<div class="container text-info">
 
     <div class="row">
 
         <div class="col-md-4">
-           <div class="card">
-               <h3> Math Quiz </h3>
 
-               <hr>
+           <div class="card card-quiz p-3">
+               <h3> Math Quizzes </h3>
 
-               <button class="btn btn-md btn-info">Play!</button>
+            
+
+           <a class="btn btn-md btn-info text-light" href="{{ route('openmathquiz') }} ">Play!</a>
            </div>
+
         </div>
 
         <div class="col-md-4">
-            <div class="card">
+            <div class="card card-quiz p-3">
                <h3> Coding Quiz </h3>
 
-               <hr>
+             
 
-               <button class="btn btn-md btn-info">Play!</button>
+               <a class="btn btn-md btn-info text-light">Play!</a>
             </div>
             </div>
 
             <div class="col-md-4">
-            <div class="card">
+            <div class="card card-quiz p-3">
                <h3> Science Quiz </h3>
 
-               <hr>
+              
 
-               <button class="btn btn-md btn-info">Play!</button>
+               <a class="btn btn-md btn-info text-light">Play!</a>
             </div>
                 </div>
     </div>

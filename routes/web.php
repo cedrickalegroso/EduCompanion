@@ -42,3 +42,11 @@ Route::get('/forum', function () {
 Route::get('/quizgames', function () {
     return view('user.quizgame');
 })->name('quizgamespage');
+
+
+/* opening games page */
+
+
+Route::get('/mathquizgame', function () {
+    return view('user.quizgames.mathquizgame');
+})->name('openmathquiz');

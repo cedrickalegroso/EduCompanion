@@ -10669,6 +10669,10 @@ a.text-dark:focus {
   border-left: 1px solid black;
 }
 
+#mainuserwrapper #mainuserwrappersec2 .card-quiz {
+  height: 100px;
+}
+
 #mainuserwrapper #mainuserwrappersec3 {
   grid-area: mainuserwrappersec3;
 }

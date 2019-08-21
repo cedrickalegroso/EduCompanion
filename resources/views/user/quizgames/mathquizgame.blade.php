@@ -17,7 +17,7 @@
     $rand2 = rand(1,999);
 
     $randomarithmetic = array('+', '-', '*', '/');
-    $randomize = $randomarithmetic[rand(0,3)]
+    $randomize = $randomarithmetic[rand(0,3)];
 
     switch ($randomize) {
     case "+":
@@ -50,14 +50,19 @@
 
     <h1> {{ $rand1 }} {{$randomize}} {{  $rand2 }} </h1>
 
+<div class="p-5">
 
-    <form action="">
-        <input type="text" class="form-control" name="useranswer" />
+        <form action="">
+                <input type="text" class="form-control" name="useranswer" />
+        
+                <br />
+                <button class="btn btn-md btn-success form-control">
+                     Submit
+                </button>
+            </form>
 
-        <button class="btn btn-md btn-success">
-             Submit
-        </button>
-    </form>
+</div>
+    
 
   
 </div>
