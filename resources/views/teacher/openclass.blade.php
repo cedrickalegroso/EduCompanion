@@ -19,7 +19,7 @@
     
             <div class="col-md-3">
               
-                <a  data-toggle="modal" href="#exampleModal" class="btn btn-md btn-success mt-5">Add School Work</a>
+                <a  data-toggle="modal" href="#exampleModal1" class="btn btn-md btn-success mt-5">Add School Work</a>
                 
             </div>
     
@@ -35,7 +35,7 @@
 
    
     <div class="card p-3 mt-2">
-            <div class="card">
+          
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
@@ -84,7 +84,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
