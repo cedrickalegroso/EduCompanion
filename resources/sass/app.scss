@@ -6,3 +6,40 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+
+
+#mainuserwrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 15% 50% 15% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". mainuserwrappersec1 mainuserwrappersec2 mainuserwrappersec3 .";
+
+    #mainuserwrappersec1{
+            grid-area: mainuserwrappersec1;
+
+
+            ul li {
+                list-style-type: none;
+                text-align: left;
+                font-size: 1.5rem;
+                margin-left: 10px;
+            }
+    }
+
+
+    #mainuserwrappersec2{
+            grid-area: mainuserwrappersec2;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+
+
+
+    }
+
+    #mainuserwrappersec3{
+            grid-area: mainuserwrappersec3;
+    }
+}
