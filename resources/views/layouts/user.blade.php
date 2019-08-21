@@ -91,7 +91,7 @@
         </div>
 
         <div id="mainuserwrappersec3">
-            <h1> Your task </h1>
+                @yield('content-sideline')
         </div>
 
 

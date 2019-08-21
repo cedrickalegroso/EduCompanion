@@ -46,7 +46,15 @@ Route::get('/quizgames', function () {
 
 /* opening games page */
 
-
+/*
 Route::get('/mathquizgame', function () {
     return view('user.quizgames.mathquizgame');
-})->name('openmathquiz');
+})->name('openmathquiz'); */
+
+
+Route::get('/mathquizgame', 'QuizGameController@mathquizgame')->name('mathquizgame');
+
+/* verifying games */
+
+
+Route::get('/verifymath/{answer}/{points}', 'QuizGameController@verifymath')->name('verifymath');

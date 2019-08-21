@@ -21,7 +21,7 @@
 
             
 
-           <a class="btn btn-md btn-info text-light" href="{{ route('openmathquiz') }} ">Play!</a>
+           <a class="btn btn-md btn-info text-light" href="{{ route('mathquizgame') }} ">Play!</a>
            </div>
 
         </div>

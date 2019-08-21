@@ -49,10 +49,10 @@
 
 
     <h1> {{ $rand1 }} {{$randomize}} {{  $rand2 }} </h1>
-
+   <p> {{ $answer }} </p>
 <div class="p-5">
 
-        <form action="">
+<form action="{{ route('verifymath', ['answer' => $answer, 'points' => $points ])}}">
                 <input type="text" class="form-control" name="useranswer" />
         
                 <br />
