@@ -15,7 +15,8 @@ class CreateEnrollTable extends Migration
     {
         Schema::create('enroll', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('erolled');
+            $table->integer('enrolled_user');
+            $table->string('enrolled_name');
             $table->integer('enrolled_at');
             $table->timestamps();
         });

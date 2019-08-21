@@ -73,7 +73,13 @@ class ClassroomController extends Controller
      */
     public function classroompage()
     {
-       return view('user.classroom');
+
+        $enrolled = enroll::where('enrolled_user', Auth::user()->id )
+        ->take('5')
+        ->get();
+
+
+       return view('user.classroom', ['enrolled' => $enrolled ]);
     }
 
 
@@ -82,7 +88,7 @@ class ClassroomController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function userenrollclass()
+    public function userenrollclass(Request $request)
     {
 
 
@@ -92,9 +98,20 @@ class ClassroomController extends Controller
 
 
         $classcode = $request['class-code'];
+         $id = Auth::user()->id;
+
+        $classroom = classroom::where('class_code', $classcode)->first();
+           $name = $classroom->class_name;
 
 
-        $classroom = classroom::where('code_class', $classcode)->first();
+        $enroll = new enroll();
+        $enroll->enrolled_user =  $id;
+        $enroll->enrolled_name =  $name;
+        $enroll->enrolled_at = $classroom->id;
+        $enroll->save();
+
+
+        return redirect()->back();
 
        
     }
