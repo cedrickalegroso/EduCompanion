@@ -26,3 +26,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/userhome', 'HomeController@index')->name('userhome');
+
+
+
+/* user games page */
+
+Route::get('/classroom', function () {
+    return view('user.classroom');
+})->name('classroompage');
+
+Route::get('/forum', function () {
+    return view('user.forum');
+})->name('forumpage');
+
+Route::get('/quizgames', function () {
+    return view('user.quizgame');
+})->name('quizgamespage');

@@ -79,9 +79,9 @@
         <div id="mainuserwrappersec1">
             <ul>
                 <li> <a href="">Home</a></li>
-                <li> <a href="">Forum</a></li>
-                <li> <a href="">Classroom</a></li>
-                <li> <a href="">Quiz Games</a></li>
+            <li> <a href="{{ route('forumpage')}} ">Forum</a></li>
+            <li> <a href="{{ route('classroompage') }}">Classroom</a></li>
+            <li> <a href="{{ route('quizgamespage')}}">Quiz Games</a></li>
                 <li> <a href="">Learns</a></li>
             </ul>
         </div>
