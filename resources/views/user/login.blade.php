@@ -124,9 +124,7 @@
                   
     </div>
     </div>
-    <div id="sec2">
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, reprehenderit quasi! Adipisci quas, et amet odit nostrum est voluptatem. Magnam ad ab molestias voluptates necessitatibus distinctio iure impedit ratione voluptas? </p>
-    </div>
+
 
   
 
