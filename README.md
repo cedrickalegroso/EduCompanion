@@ -1,4 +1,4 @@
-# hackapp | HACK ILOILO 
+# EDUCOMPANION | HACK ILOILO 
 
 <h1> This app is built on Laravel Framework </h1>
 
