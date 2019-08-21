@@ -23,11 +23,13 @@
 
         @foreach ($enrolled as $enrolledclass)
 
+      
+
         <div class="col-md-4">
                 <div class="card card-quiz p-3">
                    <h3> {{ $enrolledclass->enrolled_name }} </h3>
     
-                <a href="{{ route('openclass', ['class' => $enrolledclass->enrolled] ) }}" class="btn btn-md btn-info">open Class</a>
+                <a href="/openclass/{{$enrolledclass->enrolled_at}}" class="btn btn-md btn-info">open Class</a>
                 </div>
 
             

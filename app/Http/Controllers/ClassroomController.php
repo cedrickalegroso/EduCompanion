@@ -122,13 +122,16 @@ class ClassroomController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function openclass(Request $request, $class)
+    public function openclass($enrolled)
     {
         
-        $class = classroom::where('id', $class)->first();
-
-
-        return view('user.openclass');
+        $class = classroom::where('id', $enrolled)
+        ->take('1')
+        ->get();
+        
+      
+       
+        return view('user.openclass', ['class' => $class ]);
 
     }
 
