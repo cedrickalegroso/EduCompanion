@@ -87,7 +87,7 @@
         </div>
 
         <div id="mainuserwrappersec2">
-            <h1> sec2 </h1>
+             @yield('content')
         </div>
 
         <div id="mainuserwrappersec3">

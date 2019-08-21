@@ -44,7 +44,7 @@
                                       <div class="container">
                                         <div class="row form">
                                             <div class="col-md-12">
-                                                 <select class= form-control>
+                                                 <select class="form-control" name="school">
                                                 <option value="Central Phillippine University">Central Phillippine University</option>
                                                 <option value="University of San Agustin">University of San Agustin</option>
                                                 <option value="West Visayas State University">West Visayas State University</option>
