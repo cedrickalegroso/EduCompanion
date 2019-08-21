@@ -28,4 +28,4 @@
 
 
 
-Things to note: Not all the Call to action or features are not working some are for visualization only.
+Things to note: Not all the Call to action or features are not working, since we got no time some of the features are competely html just to give you insight about our plan.
