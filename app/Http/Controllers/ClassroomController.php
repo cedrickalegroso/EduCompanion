@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Auth;
+use App\task;
 use App\enroll;
 use App\User;
 use App\classroom;
@@ -147,7 +149,43 @@ class ClassroomController extends Controller
         ->take('1')
         ->get();
 
-        return view('teacher.openclass', ['class' => $class ]);
+        $task = task::where('task_to', $id)
+        ->orderBy('created_at', 'desc')
+        ->take('10')
+        ->get();
+
+        return view('teacher.openclass', ['class' => $class, 'task' => $task ]);
+    }
+
+
+     /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createTask(Request $request, $id)
+    {
+        $this->validate($request, [
+            'taskTitle' => 'required',
+            'taskdesc' => 'required',
+            'tasktype' => 'required',
+        ]);
+
+        $title = $request['taskTitle'];
+        $desc = $request['taskdesc'];
+        $type = $request['tasktype'];
+
+
+
+        $newtask = new task();
+        $newtask->task_title = $title;
+        $newtask->task_body = $desc;
+        $newtask->task_type = $type;
+        $newtask->task_to = $id;
+        $newtask->save();
+
+
+        return redirect()->back();
     }
 
 

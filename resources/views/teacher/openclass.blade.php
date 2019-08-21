@@ -19,7 +19,7 @@
     
             <div class="col-md-3">
               
-                <a  data-toggle="modal" href="#exampleModal" class="btn btn-md btn-success mt-5">Add Activity</a>
+                <a  data-toggle="modal" href="#exampleModal" class="btn btn-md btn-success mt-5">Add School Work</a>
                 
             </div>
     
@@ -28,6 +28,19 @@
             </div>
         </div>
     </div>
+
+    <br />
+
+    @foreach ($task as $thistask)
+   
+    <div class="card">
+        <p> New: {{ $thistask->task_type}} </p>
+          <p>  {{ $thistask->task_title }} </p>
+          <p>  {{ $thistask->task_body }} </p>
+    </div>
+  
+        
+    @endforeach
 @endsection
 
 
@@ -38,25 +51,34 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create Activity</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Create School work</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
+                    @foreach ($class as $thisclass)
+            <form action="{{ route('createTask', ['id' =>  $thisclass->id ]) }}">
+                   @endforeach
 
-                <form action="">
+                        
 
-                     <input type="text" class="form-control" placeholder="title" />
+                     <input type="text" name="taskTitle" class="form-control" placeholder="title" />
                      <br />
-                     <textarea type="text" class="form-control"></textarea>
+                     <textarea type="text" name="taskdesc" class="form-control"></textarea>
+                     <br />
+                     <select name="tasktype" class="form-control">
+                            <option value="Homework">Homework</option>
+                            <option value="activity">activity</option>
+                          </select>
+
+                          <br />
+                          
+                          <button class="btn btn-md btn-success form-control"> Send </button>
                 </form>
               
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+           
           </div>
         </div>
       </div>

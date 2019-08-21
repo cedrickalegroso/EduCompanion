@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/registeruser', function () {
     return view('welcome');
 });
 
@@ -92,6 +92,10 @@ Route::get('/verifymath/{answer}/{points}', 'QuizGameController@verifymath')->na
 
 /* user classes  */
 
+
+
+
+Route::get('/createTask/{id}', 'ClassroomController@createTask')->name('createTask');
 
 
 
