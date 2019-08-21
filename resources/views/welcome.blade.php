@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                  <p> To leverage education ing the philippines </p>
+                  <p> To leverage education in the philippines </p>
                 </div>
             </div>
         </div>
