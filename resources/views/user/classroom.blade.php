@@ -27,7 +27,7 @@
                 <div class="card card-quiz p-3">
                    <h3> {{ $enrolledclass->enrolled_name }} </h3>
     
-                <a href="openclass/{{$enrolledclass->enrolled_at}}" class="btn btn-md btn-info">open Class</a>
+                <a href="{{ route('openclass', ['class' => $enrolledclass->enrolled] ) }}" class="btn btn-md btn-info">open Class</a>
                 </div>
 
             

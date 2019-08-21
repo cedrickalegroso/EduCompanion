@@ -67,6 +67,9 @@ Route::get('/classroompage', 'ClassroomController@classroompage')->name('classro
 
 Route::get('/userenrollclass', 'ClassroomController@userenrollclass')->name('userenrollclass');
 
+
+Route::get('/openclass/{class}', 'ClassroomController@openclass')->name('openclass');
+
 /* -----  */
 
 /* teacher classes  */
