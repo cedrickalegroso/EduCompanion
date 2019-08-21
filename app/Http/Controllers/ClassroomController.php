@@ -136,6 +136,22 @@ class ClassroomController extends Controller
     }
 
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function teacheropenclass($id)
+    {
+        $class = classroom::where('id', $id)
+        ->take('1')
+        ->get();
+
+        return view('teacher.openclass', ['class' => $class ]);
+    }
+
+
+
 
     /**
      * Show the form for creating a new resource.

@@ -110,4 +110,7 @@ Route::get('/teacherclassroompage', 'ClassroomController@teacherclassroompage')-
 
 
 Route::get('/teachercreateclass', 'ClassroomController@teachercreateclass')->name('teachercreateclass');
+
+
+Route::get('teacheropenclass/{id}', 'ClassroomController@teacheropenclass')->name('teacheropenclass');
 /* -----  */

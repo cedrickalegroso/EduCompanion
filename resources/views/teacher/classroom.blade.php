@@ -27,6 +27,8 @@
             <div class="card card-quiz p-3">
       <h4 class="text-info">  {{ $class->class_name }} </h4> 
       <p class="text-info"> classcode: {{ $class->class_code }} </p>
+
+      <a href="/teacheropenclass/{{$class->id}}" class="btn btn-md btn-info">Manage Class</a>
     </div>
     </div>
         
